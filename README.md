@@ -1,16 +1,24 @@
-# mcp-timeapi-io
+# @pipeworx/timeapi-io
 
-TimeAPI.io MCP.
+[TimeAPI.io](https://timeapi.io/swagger/index.html) MCP — keyless current time, zone conversion, DST queries.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `current_time_coordinate` | Current time at lat/lon. |
-| `convert_time_zone` | Convert datetime between zones. |
-| `translate_to_iso` | Parse custom-format date to ISO. |
+- `current_time(timeZone)` — current time in a zone
+- `current_time_coordinate(latitude, longitude)` — current time at lat/lon
+- `current_time_ip(ipAddress)` — current time at an IP
+- `current_iso_zoned_date_time(timeZone)` — ISO zoned datetime
+- `current_zone_info(timeZone)` — zone info (DST flag, UTC offset)
+- `convert_time_zone(fromTimeZone, dateTime, toTimeZone, dstAmbiguity?)` — convert between zones
+- `day_of_the_week(date)` — day of week for a date
+- `list_zones()` — supported zones
+- `translate_to_iso(date, format)` — parse a custom-format date to ISO
+
+## Data source
+
+`https://timeapi.io/api`
 
 ## Quick Start
 
@@ -26,7 +34,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -50,7 +58,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
