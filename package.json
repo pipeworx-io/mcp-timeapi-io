@@ -1,18 +1,25 @@
 {
   "name": "@pipeworx/mcp-timeapi-io",
   "version": "0.1.0",
-  "description": "Keyless time/timezone: current, by IP/coords, conversion, DST, list zones.",
+  "description": "TimeAPI.io MCP.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-timeapi-io": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "timeapi-io"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-timeapi-io"
+    "url": "git+https://github.com/pipeworx-io/mcp-timeapi-io.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
   },
   "devDependencies": {
     "typescript": "^5.7.0"
