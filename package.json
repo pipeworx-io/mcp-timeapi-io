@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-timeapi-io",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TimeAPI.io MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -24,5 +24,9 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-f4dc657dea3145da87f7c851d91072faaf417be257f7cf107833466c17a7ac12",
+    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
   }
 }
