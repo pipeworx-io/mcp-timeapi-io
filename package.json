@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-timeapi-io",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "TimeAPI.io MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "timeapi-io",
     "gatewaySlug": "timeapi-io",
-    "sourceHash": "v1-6eb1a9b42192b01360ef98d109db8203c5f52c0315fa82665ac15a67465cd647",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-de95bec58474df0096a33370b5a8647b84279a8b175b34dac3aa1811ef2f2d40",
+    "sourceCommit": "868e119d526d5409447b7ee2149afba7eb9d2593"
   }
 }
